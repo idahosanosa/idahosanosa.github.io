@@ -29,11 +29,11 @@
                         <span class="bar"></span>
                     </div> 
                     <ul class="nav-links" id="navLinks">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#passion">Passion</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <!-- <li><a href="#">Work</a></li> -->
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="links"><a href="#about" >About</a></li>
+                        <li class="links"><a href="#passion">Passion</a></li>
+                        <li class="links"><a href="#experience">Experience</a></li>
+                        <!-- <li class="links"><a href="#" >Work</a></li> -->
+                        <li class="links"><a href="#contact"   >Contact</a></li>
                     </ul>
                 </div>
 
@@ -46,10 +46,12 @@
             <h1>Hi, I'M NOSA IDAHOSA</h1>
             <p>FULL STACK Web Developer</p>
         </div>
+        <div id="about"></div>
+
     </header>
     <div class="clear"></div>
     <main>
-        <div id="about" class="about">
+        <div  class="about">
             <h1>A LITTLE BIT ABOUT ME </h1>
             <img src="./images/me.jpeg" >
             <P>Hey! My name is Nosa and I'm a web developer with a passion for front end and backend development. 
@@ -61,10 +63,11 @@
                 Excellent team player, open minded, and desire to learn new 
                 skills
             </P>
+            <div id="passion"></div>
         </div>
         <div class="clear"></div>
 
-        <div id="passion" class="passion">
+        <div  class="passion">
             <h1>The things i am passionate about</h1> 
             <div class="passion-list-container">
                 <div class="passion-list">
@@ -180,9 +183,17 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 const toggleButton = document.getElementById('toggleButton');
 const navLinks = document.getElementById('navLinks');
+const linkss = document.getElementsByClassName('linkss')[0];
 
-toggleButton.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+ 
+$(document).ready(function(){
+
+    $(document).on('click', '.links, #toggleButton', function (){ 
+        // $('.navLinks').toggleClass('active');
+            navLinks.classList.toggle('active');
+
+    });
+
 });
 
 </script>
