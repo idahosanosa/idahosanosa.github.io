@@ -211,6 +211,9 @@ main{
     padding-bottom: 10px;
 }
 
+.passion-list p {
+    overflow: unset;
+}
 .experience{
     padding: 20px;
     text-align: center;
