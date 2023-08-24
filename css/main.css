@@ -212,7 +212,8 @@ main{
 }
 
 .passion-list p {
-    overflow: unset;
+    overflow: hidden;
+
 }
 .experience{
     padding: 20px;
@@ -405,6 +406,13 @@ footer{
     header {
         height: 300px; 
     }
+
+    
+    .passion-list{ 
+        width: 100%; 
+        margin-bottom: 25px;
+    }
+
 }
 
 @media (max-width:350px) {
@@ -435,4 +443,13 @@ footer{
         padding: 50px; 
         padding-top: 100px;   
     }
+
+
+    
+    .passion-list{ 
+        width: 100%; 
+        margin-bottom: 25px;
+    }
+
+
 }
