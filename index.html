@@ -29,11 +29,11 @@
                         <span class="bar"></span>
                     </div> 
                     <ul class="nav-links" id="navLinks">
-                        <li class="links"><a href="#about" >About</a></li>
-                        <li class="links"><a href="#passion">Passion</a></li>
-                        <li class="links"><a href="#experience">Experience</a></li>
-                        <!-- <li class="links"><a href="#" >Work</a></li> -->
-                        <li class="links"><a href="#contact"   >Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#passion">Passion</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <!-- <li><a href="#">Work</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -46,12 +46,10 @@
             <h1>Hi, I'M NOSA IDAHOSA</h1>
             <p>FULL STACK Web Developer</p>
         </div>
-        <div id="about"></div>
-
     </header>
     <div class="clear"></div>
     <main>
-        <div  class="about">
+        <div id="about" class="about">
             <h1>A LITTLE BIT ABOUT ME </h1>
             <img src="./images/me.jpeg" >
             <P>Hey! My name is Nosa and I'm a web developer with a passion for front end and backend development. 
@@ -63,11 +61,10 @@
                 Excellent team player, open minded, and desire to learn new 
                 skills
             </P>
-            <div id="passion"></div>
         </div>
         <div class="clear"></div>
 
-        <div  class="passion">
+        <div id="passion" class="passion">
             <h1>The things i am passionate about</h1> 
             <div class="passion-list-container">
                 <div class="passion-list">
@@ -79,7 +76,7 @@
                     <p>Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can enjoy on all digital mediums.</p>
                 </div> 
                 <div class="passion-list">
-                    <div class="passion-title">DESIGN</div>
+                    <div class="passion-title">DEPLOYMENT</div>
                     <p>Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can enjoy on all digital mediums.</p>
                 </div>     
             </div>
@@ -125,8 +122,9 @@
                 </li>
                 <!-- <li><a href="#">Instagram</a></li> -->
             </ul>
+            <br>
         </div>
-        <p class="copyright">&copyNosa Idahosa 2023 </p>
+        <p class="copyright">&copy Nosa Idahosa 2025 </p>
     </footer>
     
 </body>
@@ -183,17 +181,9 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 const toggleButton = document.getElementById('toggleButton');
 const navLinks = document.getElementById('navLinks');
-const linkss = document.getElementsByClassName('linkss')[0];
 
- 
-$(document).ready(function(){
-
-    $(document).on('click', '.links, #toggleButton', function (){ 
-        // $('.navLinks').toggleClass('active');
-            navLinks.classList.toggle('active');
-
-    });
-
+toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
 
 </script>
