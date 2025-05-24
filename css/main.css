@@ -192,8 +192,7 @@ main{
     width: 80%;
     /* display: inline-block; */
     /* align-items: center; */
-    display: inline-block;
-    /* background-color: red; */
+    display: inline-block; 
 }
 
 .passion-list{
@@ -220,7 +219,7 @@ main{
 .experience-list{ 
     display: inline-block;  
     padding: 10px; 
-    transition: filter 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out; 
 } 
 
 .experience-list img{ 
@@ -230,6 +229,9 @@ main{
     transition: filter 0.3s ease-in-out;
     filter: grayscale(100%); 
     display: inline;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
   /* Initial grayscale effect */
 }
 
@@ -325,7 +327,16 @@ footer{
          background-size: cover; /* Makes the image cover the entire element */
   
     } 
- 
+    .passion-list-container{
+        width: 100%;  
+    }
+    .passion-list {
+        display: inline-block;
+        width: 80%;
+        background-color: white;
+        margin: 5px;
+        padding: 7px; 
+    }
 }
 
 
