@@ -286,7 +286,7 @@ footer{
 
 .social-icons{ 
     justify-items: center; 
-    margin-left: -20px;
+    margin-left:-25px;
 }
 .social-icons ul li{
     text-decoration: none;
