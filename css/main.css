@@ -330,12 +330,8 @@ footer{
     .passion-list-container{
         width: 100%;  
     }
-    .passion-list {
-        display: inline-block;
-        width: 80%;
-        background-color: white;
-        margin: 5px;
-        padding: 7px; 
+    .passion-list { 
+        width: 80%; 
     }
 }
 
@@ -390,6 +386,12 @@ footer{
         display: none;
     } */
  
+    .passion-list-container{
+        width: 100%;  
+    }
+    .passion-list { 
+        width: 80%; 
+    }
 
     .nav-links.active {
         display: flex;
@@ -446,5 +448,13 @@ footer{
     .top-title{ 
         padding: 50px; 
         padding-top: 100px;   
+    }
+
+    
+    .passion-list-container{
+        width: 100%;  
+    }
+    .passion-list { 
+        width: 80%; 
     }
 }
